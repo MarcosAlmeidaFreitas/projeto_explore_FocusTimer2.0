@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 82.5%;  
+  --color-button: black;
+}
+
+html.dark{
+  background-color: black;
+  --color-button: white;
+}
+
+/* Classe designada para sumir com o texto da tela mas continuar para o leitor de tela */
+.sr-only{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Usado para a troca dos icones no botão toggle-mode */
+html:not(.dark) .ph-sun,
+html.dark .ph-moon{
+  display: none;
+}
+
+#toggle-button{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-button);
+}
+
+
+
