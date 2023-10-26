@@ -4,14 +4,23 @@
   box-sizing: border-box;
 }
 
+#app{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
 html{
-  font-size: 82.5%;  
+  font-size: 62.5%;  
   --color-button: black;
+  --color-timer: #323238;
 }
 
 html.dark{
-  background-color: black;
+  background-color: #2d2d30;
   --color-button: white;
+  --color-timer: white;
 }
 
 /* Classe designada para sumir com o texto da tela mas continuar para o leitor de tela */
@@ -34,9 +43,18 @@ html.dark .ph-moon{
   right: 2rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: var(--color-button);
 }
 
+#timer span{
+  font-size: 12rem;
+  color: var(--color-timer);
+}
 
-
+#controls button{
+  background: none;
+  border: none;
+  font-size: 3.5rem;
+  color: var(--color-button);
+}
