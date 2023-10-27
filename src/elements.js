@@ -1,0 +1,1 @@
+export const controlSongs =  document.getElementById('#buttonsSongs')

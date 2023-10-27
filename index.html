@@ -15,13 +15,13 @@
   <script type="module" src="./src/main.js" defer></script>
 </head>
 <body>
-  <div id="app">
-    <button id="toggle-button">
-      <span class="sr-only">Ativar Dark Mode</span>    
-      <i class="ph-bold ph-sun"></i>
-      <i class="ph-bold ph-moon"></i>
-    </button>
-    
+  <button id="toggle-button">
+    <span class="sr-only">Ativar Dark Mode</span>    
+    <i class="ph-bold ph-sun"></i>
+    <i class="ph-bold ph-moon"></i>
+  </button>
+
+  <div id="app">  
     <section id="clock">
       <section id="timer">
         <span id="minutes">00</span>
@@ -50,11 +50,22 @@
     </section>
     
     
-    <section id="songs">
-      <button><i class="ph ph-tree"></i></button>
-      <button><i class="ph ph-cloud-rain"></i></button>
-      <button><i class="ph ph-coffee"></i></button>
-      <button><i class="ph ph-campfire"></i></button>
+    <section id="buttonsSongs">
+      <button data-action="playFlorest">
+        <i class="ph ph-tree"></i>
+      </button>
+      
+      <button data-action="playRain">
+        <i class="ph ph-cloud-rain"></i>
+      </button>
+      
+      <button data-action="playCoffeeShop">
+        <i class="ph ph-coffee"></i>
+      </button>
+      
+      <button data-action="playCampFire">
+        <i class="ph ph-campfire"></i>
+      </button>
     </section>  
 </body>
 </html>

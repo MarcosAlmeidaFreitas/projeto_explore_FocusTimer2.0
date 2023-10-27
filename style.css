@@ -5,10 +5,11 @@
 }
 
 #app{
-  height: 100vh;
+  height: 90vh;
   display: grid;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
   align-content: center;
+  justify-items: center;
 }
 
 html{
@@ -54,6 +55,12 @@ html.running .ph-play-circle{
   color: var(--color-button);
 }
 
+#clock{
+  display: grid;
+  align-items: center;
+  justify-content: center;  
+}
+
 #timer{
   text-align: center;
 }
@@ -73,13 +80,22 @@ html.running .ph-play-circle{
   border: none;
   font-size: 3.5rem;
   color: var(--color-button);
+  justify-items: stretch;
 }
 
-#songs button{
-  font-size: 3rem;
+#buttonsSongs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+#buttonsSongs button{
+  font-size: 5rem;
   width: 8rem;
   height: 9rem;
-  border-radius: 2rem;
+  border-radius: 2.4rem;
   background-color: var(--color-button-song);
   border: none;
 }
