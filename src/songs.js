@@ -1,7 +1,12 @@
-export const chuva = new Audio('./assets/chuva.wav');
+export const rain = new Audio('./assets/chuva.wav');
 
-export const floresta = new Audio('./assets/floresta.wav');
+export const florest = new Audio('./assets/floresta.wav');
 
-export const lareira = new Audio('./assets/lareira.wav');
+export const campFire = new Audio('./assets/lareira.wav');
 
-export const cafeteria = new Audio('./assets/cafeteria.wav');
+export const coffeeShop = new Audio('./assets/cafeteria.wav');
+
+rain.loop = true;
+florest.loop = true;
+campFire.loop = true;
+coffeeShop.loop = true;

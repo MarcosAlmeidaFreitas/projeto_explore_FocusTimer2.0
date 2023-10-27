@@ -83,7 +83,7 @@ html.running .ph-play-circle{
   justify-items: stretch;
 }
 
-#buttonsSongs{
+#buttonSongs{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -91,7 +91,7 @@ html.running .ph-play-circle{
   gap: 3.2rem;
 }
 
-#buttonsSongs button{
+#buttonSongs button{
   font-size: 5rem;
   width: 8rem;
   height: 9rem;
@@ -101,4 +101,6 @@ html.running .ph-play-circle{
   cursor: pointer;
 }
 
-
+.buttonSongSelected{
+  background: red;
+}
