@@ -98,6 +98,7 @@ html.running .ph-play-circle{
   border-radius: 2.4rem;
   background-color: var(--color-button-song);
   border: none;
+  cursor: pointer;
 }
 
 

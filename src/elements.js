@@ -1,1 +1,1 @@
-export const controlSongs =  document.getElementById('#buttonsSongs')
+export const controlSongs =  document.getElementById('buttonsSongs');
