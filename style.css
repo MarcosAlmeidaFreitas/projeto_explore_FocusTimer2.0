@@ -17,6 +17,7 @@ html{
   --color-button: black;
   --color-timer: #323238;
   --color-button-song: #E1E1E6;
+  --color-bg-button-song-selected: #02799D;
 }
 
 html.dark{
@@ -83,7 +84,7 @@ html.running .ph-play-circle{
   justify-items: stretch;
 }
 
-#buttonSongs{
+.buttonSongs{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -91,7 +92,12 @@ html.running .ph-play-circle{
   gap: 3.2rem;
 }
 
-#buttonSongs button{
+.buttonSongs .buttonSongSelected{
+  background-color: var(--color-bg-button-song-selected);
+  color: white;
+}
+
+.buttonSongs button{
   font-size: 5rem;
   width: 8rem;
   height: 9rem;
@@ -99,8 +105,6 @@ html.running .ph-play-circle{
   background-color: var(--color-button-song);
   border: none;
   cursor: pointer;
+  appearance: none;
 }
 
-.buttonSongSelected{
-  background: red;
-}
