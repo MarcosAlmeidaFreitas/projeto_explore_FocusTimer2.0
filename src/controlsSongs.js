@@ -2,25 +2,31 @@ import * as songs from './songs.js'
 import state from './state.js';
 
 const controlSongs =  document.querySelector('.buttonSongs');
+ let previousSong; //Variavel que guarda o nome do som anterior 
+ let previousEvent; //variavel que guarda o evento do click anterior.
 
 controlSongs.addEventListener('click', (event) => {
   // Pega a ação do evento que foi clicado, e se for undefined ele termina a função
-  let action = event.target.dataset.action;
+  let action = event.target.dataset.action; //aqui passa o nome da ação, ou evento anteri
   if(action == undefined){
     return;
   }
 
   if(state.isMute == true){
-    state.isMute = false;
-    state.nameSong = action;
     playSong(event, action);
+    previousSong = action;
+    previousEvent = event;
   }else{
-    stopSong(event, action);
-    state.isMute = true;
+    if(previousSong == action){
+      stopSong(event, action);
+    }else{
+      stopSong(previousEvent, previousSong);
+      playSong(event, action);
+      previousSong = action;
+      previousEvent = event;
+    }
   }
-
   
-  console.log('name song is: ' + state.nameSong);
 });
 
 function playSong(event, action){
@@ -37,6 +43,8 @@ function playSong(event, action){
     songs.campFire.play();
     event.target.classList.toggle('buttonSongSelected');
   }
+
+  state.isMute = false;
 }
 
 function stopSong(event, action){
@@ -53,4 +61,6 @@ function stopSong(event, action){
     songs.campFire.pause();
     event.target.classList.toggle('buttonSongSelected');
   }
+
+  state.isMute = true;
 }
