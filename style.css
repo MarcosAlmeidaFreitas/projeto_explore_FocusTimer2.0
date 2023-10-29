@@ -71,17 +71,18 @@ html.running .ph-play-circle{
   color: var(--color-timer);
 }
 
-#controls{
-  display: flex;
-  justify-content: space-evenly;
+#controlsTimer{
+  display: grid;
+  grid-auto-flow: column;
+  /* justify-content: space-evenly; */
 }
 
-#controls button{
+#controlsTimer button{
   background: none;
   border: none;
   font-size: 3.5rem;
   color: var(--color-button);
-  justify-items: stretch;
+  /* justify-items: stretch; */
 }
 
 .buttonSongs{
@@ -108,3 +109,6 @@ html.running .ph-play-circle{
   appearance: none;
 }
 
+.editable{
+  border: var(--color-timer) 2px solid;
+}

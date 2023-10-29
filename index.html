@@ -29,35 +29,50 @@
         <span id="seconds">00</span>
       </section>
 
-      <section id="controls">
-        <button>
-          <i class="ph ph-play-circle"></i>
-          <i class="ph ph-pause-circle"></i>
+      <section id="controlsTimer">
+        <button class="ph ph-play-circle" data-action="playPause">
+          <span class="sr-only">Play</span>
         </button>
 
-        <button>
-          <i class="ph ph-stop-circle"></i>
+        <button class="ph ph-pause-circle" data-action="playPause">
+          <span class="sr-only">Pause</span>
         </button>
 
-        <button>
-          <i class="ph ph-plus-circle"></i>
+        <button class="ph ph-stop-circle" data-action="stop">
+          <span class="sr-only">Stop</span>
         </button>
         
-        <button>
-          <i class="ph ph-minus-circle"></i>
+        <button class="ph ph-timer secondary" data-action="set">
+          <span class="sr-only">Ajustar Contador</span>
+        </button>
+        
+        <button class="ph ph-plus-circle" data-action="timerAdd">
+          <span class="sr-only">Adicionar mais 5 minutos ao contador</span>
+        </button>
+        
+        <button class="ph ph-minus-circle" data-action="timerSubtract">
+          <span class="sr-only">Subtrair 5 minutos do contador</span>
         </button>
       </section>
     </section>
     
     
     <section class="buttonSongs">
-      <button class="ph ph-tree" data-action="playFlorest"></button>
+      <button class="ph ph-tree" data-action="playFlorest">
+        <span class="sr-only">Som ambiente de floresta</span>
+      </button>
       
-      <button class="ph ph-cloud-rain" data-action="playRain"></button>
+      <button class="ph ph-cloud-rain" data-action="playRain">
+        <span class="sr-only">Som ambiente de chuva</span>
+      </button>
       
-      <button class="ph ph-coffee" data-action="playCoffeeShop"></button>
+      <button class="ph ph-coffee" data-action="playCoffeeShop">
+        <span class="sr-only">Som ambiente de uma cafeteria com pessoas conversando</span>
+      </button>
       
-      <button class="ph ph-campfire" data-action="playCampFire"></button>
+      <button class="ph ph-campfire" data-action="playCampFire">
+        <span class="sr-only">Som ambiente de uma fogueira</span>
+      </button>
     </section>  
 </body>
 </html>

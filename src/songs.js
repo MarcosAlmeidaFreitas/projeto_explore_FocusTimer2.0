@@ -10,3 +10,7 @@ rain.loop = true;
 florest.loop = true;
 campFire.loop = true;
 coffeeShop.loop = true;
+
+
+export const mousePlayClick = new Audio('./assets/mouse_play_click.mp3');
+export const mouseClick = new Audio('./assets/mouse_click.mp3');
