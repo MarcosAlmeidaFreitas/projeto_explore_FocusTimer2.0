@@ -7,7 +7,7 @@
 #app{
   height: 90vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   align-content: center;
   justify-items: center;
 }
@@ -57,8 +57,9 @@ html.running .ph-play-circle{
 }
 
 #clock{
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
   justify-content: center;  
 }
 
@@ -112,3 +113,40 @@ html.running .ph-play-circle{
 .editable{
   border: var(--color-timer) 2px solid;
 }
+
+.remove{
+  visibility: hidden;
+}
+
+.remove2{
+  display: none;
+}
+
+
+@media(max-width: 850px) {
+  .remove{
+    display: none;
+  }
+
+  #app{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .remove2{
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  #app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+  }
+  
+  .buttonSongs{
+    grid-template-columns: 100px 100px;
+  }
+}  

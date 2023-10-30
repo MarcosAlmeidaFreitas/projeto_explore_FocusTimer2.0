@@ -1,6 +1,7 @@
 import { stopOrReset } from './actionsTimer.js';
 import * as elements from './elements.js';
 import state from './state.js';
+import { kichenTimer } from './songs.js';
 
 export function updateDisplay(minutes, seconds){
   //se caso caso a variavel minutes do cabeçalho da função for nulo, 
@@ -34,6 +35,7 @@ export function countTimer(){
     minutes--;
   }else if(minutes == 0 && seconds < 0){
     stopOrReset();
+    kichenTimer.play();
     return;
   }
 

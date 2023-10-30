@@ -36,8 +36,8 @@ function playSong(event, action){
   }else if(action == 'playRain'){
     songs.rain.play();
     event.target.classList.toggle('buttonSongSelected');
-  }else if(action == 'playCoffeeShop'){
-    songs.coffeeShop.play();
+  }else if(action == 'playOcean'){
+    songs.ocean.play();
     event.target.classList.toggle('buttonSongSelected');
   }else{
     songs.campFire.play();
@@ -54,8 +54,8 @@ function stopSong(event, action){
   }else if(action == 'playRain'){
     songs.rain.pause();
     event.target.classList.toggle('buttonSongSelected');
-  }else if(action == 'playCoffeeShop'){
-    songs.coffeeShop.pause();
+  }else if(action == 'playOcean'){
+    songs.ocean.pause();
     event.target.classList.toggle('buttonSongSelected');
   }else{
     songs.campFire.pause();

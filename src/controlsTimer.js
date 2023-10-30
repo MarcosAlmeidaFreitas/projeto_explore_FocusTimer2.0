@@ -22,5 +22,6 @@ elements.controlsTimer.addEventListener('click', (event)=>{
       break;
     case 'stop':
       ActionTimer.stopOrReset();
+      break
   }
 });
