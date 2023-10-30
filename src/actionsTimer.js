@@ -9,6 +9,7 @@ export function timerAdd5Minutes(){
 
   if(state.minutes < 60 && explosionTimer <= 60){
     timer.updateDisplay(explosionTimer, state.seconds);
+    songs.mouseClick.play();
   }
 }
 
@@ -17,18 +18,21 @@ export function timerSubtract5Minutes(){
 
   if(explosionTimer >= 0){
     timer.updateDisplay(explosionTimer, state.seconds);
+    songs.mouseClick.play();
   }else{
     timer.updateDisplay(0,0);
   }
 }
 
 export function timerDecrement(){
+  songs.mouseClick.play();
   document.documentElement.classList.toggle('running');
   state.isRunning = !state.isRunning;
   timer.countTimer();
 }
 
 export function setTimer(){
+  songs.mouseClick.play();
   events.set_timer();
 }
 

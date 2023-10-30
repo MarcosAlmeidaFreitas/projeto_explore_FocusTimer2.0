@@ -13,5 +13,5 @@ ocean.loop = true;
 
 
 export const mousePlayClick = new Audio('./assets/mouse_play_click.mp3');
-export const mouseClick = new Audio('./assets/mouse_click.mp3');
+export const mouseClick = new Audio('./assets/button-press.wav');
 export const kichenTimer = new Audio('./assets/kichen-timer.mp3');
